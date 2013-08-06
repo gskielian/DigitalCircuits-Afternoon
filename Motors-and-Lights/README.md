@@ -7,8 +7,4 @@ Motors-and-Lights
 
 Credits to: http://farm1.staticflickr.com/110/283388408_36ebf69f72_o.jpg
 
-# A Heading
-
-## A Smaller Heading
-
-### An Even Smaller Heading
+## Here we have our code from day one of Digital Circuits

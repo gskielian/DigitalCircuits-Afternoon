@@ -1,3 +1,4 @@
+
 #include <Servo.h> 
 
 Servo servz;
@@ -32,18 +33,18 @@ void loop()
 
 }
 
-void scanUp(int begin, int end, int slowness)
+void scanUp(int theBegin, int theEnd, int slowness)
 {
-   for ( int i = begin ; i < end; i++)
+   for ( int i = theBegin ; i < theEnd; i++)
       {
         servs.write(i);
         delay(slowness);  
       } 
 }
 
-void scanDown(int begin, int end, int slowness)
+void scanDown(int theBegin, int theEnd, int slowness)
 {
-   for ( int i = begin ; i > end; i--)
+   for ( int i = theBegin ; i > theEnd; i--)
       {
         servs.write(i);
         delay(slowness);  

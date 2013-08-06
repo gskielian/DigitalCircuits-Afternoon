@@ -15,16 +15,19 @@ void setup()
 
 void loop()
 {
-  if(Serial.available())
+  if( Serial.available() ) 
   {
       command = Serial.parseInt();
       if (command  == 1 )
       {
+      
       }
       if (command == 0)
       {
+      
       }
   }
+  delay(10);
 }
 
 void scan()

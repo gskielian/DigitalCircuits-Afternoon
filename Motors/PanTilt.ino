@@ -15,6 +15,7 @@ void setup()
 
 void loop()
 {
+
   if( Serial.available() ) 
   {
       command = Serial.parseInt();
@@ -28,10 +29,23 @@ void loop()
       }
   }
   delay(10);
+
 }
 
-void scan()
+void scanUp(int begin, int end, int slowness)
 {
-  
-  
+   for ( int i = begin ; i < end; i++)
+      {
+        servs.write(i);
+        delay(slowness);  
+      } 
+}
+
+void scanDown(int begin, int end, int slowness)
+{
+   for ( int i = begin ; i > end; i--)
+      {
+        servs.write(i);
+        delay(slowness);  
+      } 
 }

@@ -22,11 +22,12 @@ void loop()
       command = Serial.parseInt();
       if (command  == 1 )
       {
-      
+         scanUp(10,180,10);
+         scanUp(50,90,100);
       }
       if (command == 0)
-      {
-      
+      { 
+         servz.write(90);
       }
   }
   delay(10);
@@ -37,7 +38,7 @@ void scanUp(int theBegin, int theEnd, int slowness)
 {
    for ( int i = theBegin ; i < theEnd; i++)
       {
-        servs.write(i);
+        servz.write(i);
         delay(slowness);  
       } 
 }
@@ -46,7 +47,7 @@ void scanDown(int theBegin, int theEnd, int slowness)
 {
    for ( int i = theBegin ; i > theEnd; i--)
       {
-        servs.write(i);
+        servz.write(i);
         delay(slowness);  
       } 
 }

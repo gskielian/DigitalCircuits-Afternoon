@@ -50,6 +50,7 @@ void loop()
   ans: voltage
 6. If a bigger resistor has same amount of current through it, it builds up more voltage.  +2 50N4K
 7. True or False: the following code is okay:
+
 ```arduino
 if ( digitalRead(5) == HIGH );
   {

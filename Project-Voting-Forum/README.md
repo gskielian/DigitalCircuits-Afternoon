@@ -10,5 +10,5 @@ Vote for your preferred project in the forum : )
 http://makerf.com/posts/fun_with_crystal_oscillators_part_1
 
 
-## Create a TV Jammer using the Arduino
+## Create a TV Remote Jammer using the Arduino
 http://www.555-timer-circuits.com/tv-remote-control-jammer.html
